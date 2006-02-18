@@ -1,5 +1,6 @@
 %define		pname pyenchant
 Summary:	Spellchecking library for Python
+Summary(pl):	Biblioteka Pythona sprawdzaj±ca pisowniê
 Name:		python-%{pname}
 Version:	1.1.5
 Release:	1
@@ -17,6 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PyEnchant is a set of language bindings and some wrapper classes to
 make the excellent Enchant spellchecker available as a Python module.
+
+%description -l pl
+PyEnchant to zbiór dowi±zañ jêzyka i klas obudowuj±cych
+udostêpniaj±cych ¶wietn± bibliotekê sprawdzania pisowni Enchant jako
+modu³ Pythona.
 
 %prep
 %setup -q -n %{pname}-%{version}
