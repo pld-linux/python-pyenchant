@@ -8,7 +8,7 @@ License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
 # Source0-md5:	d9a07392f1f0910635a221273ac9654d
-URL:		http://pyenchant.sf.net/
+URL:		http://pyenchant.sourceforge.net/
 BuildRequires:	enchant-devel >= 1.1.6
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
