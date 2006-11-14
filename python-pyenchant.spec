@@ -4,7 +4,7 @@ Summary(pl):	Biblioteka Pythona sprawdzaj±ca pisowniê
 Name:		python-%{pname}
 Version:	1.2.0
 Release:	1
-License:	LGPL v2.1
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
 # Source0-md5:	2fefef0868b110b1da7de89c08344dd2
