@@ -2,18 +2,19 @@
 Summary:	Spellchecking library for Python
 Summary(pl):	Biblioteka Pythona sprawdzaj±ca pisowniê
 Name:		python-%{pname}
-Version:	1.1.5
+Version:	1.2.0
 Release:	1
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
-# Source0-md5:	d9a07392f1f0910635a221273ac9654d
+# Source0-md5:	2fefef0868b110b1da7de89c08344dd2
 URL:		http://pyenchant.sourceforge.net/
-BuildRequires:	enchant-devel >= 1.1.6
+BuildRequires:	enchant-devel >= 1.3.0
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-libs
+Requires:	enchant >= 1.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
