@@ -1,6 +1,6 @@
 %define		pname pyenchant
 Summary:	Spellchecking library for Python
-Summary(pl.UTF-8):   Biblioteka Pythona sprawdzająca pisownię
+Summary(pl.UTF-8):	Biblioteka Pythona sprawdzająca pisownię
 Name:		python-%{pname}
 Version:	1.2.0
 Release:	1
