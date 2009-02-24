@@ -2,12 +2,13 @@
 Summary:	Spellchecking library for Python
 Summary(pl.UTF-8):	Biblioteka Pythona sprawdzająca pisownię
 Name:		python-%{pname}
-Version:	1.3.1
+Version:	1.5.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
-# Source0-md5:	788302ccab3450097d5f466ff0a5b935
+# Source0-md5:	1195bb1dae4fa0efc76f1668a35fe458
+Patch0:		%{name}-ez_setup.patch
 URL:		http://pyenchant.sourceforge.net/
 BuildRequires:	enchant-devel >= 1.3.0
 BuildRequires:	python-devel
@@ -28,6 +29,7 @@ moduł Pythona.
 
 %prep
 %setup -q -n %{pname}-%{version}
+%patch0 -p1
 
 %build
 python setup.py build
@@ -40,19 +42,18 @@ python setup.py install \
 	--root $RPM_BUILD_ROOT \
 	--single-version-externally-managed
 
-find $RPM_BUILD_ROOT%{py_sitedir}/enchant -name '*.py' -exec rm -f {} \;
-rm -rf $RPM_BUILD_ROOT%{py_sitedir}/%{pname}-%{version}-*.egg-info
+find $RPM_BUILD_ROOT%{python_sitelib}/enchant -name '*.py' -exec rm -f {} \;
+rm -rf $RPM_BUILD_ROOT%{python_sitelib}/%{pname}-%{version}-*.egg-info
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README.txt TODO.txt
-%dir %{py_sitedir}/enchant
-%dir %{py_sitedir}/enchant/checker
-%dir %{py_sitedir}/enchant/tokenize
-%attr(755,root,root) %{py_sitedir}/enchant/*.so
-%{py_sitedir}/enchant/*.py[oc]
-%{py_sitedir}/enchant/checker/*.py[oc]
-%{py_sitedir}/enchant/tokenize/*.py[oc]
+%doc README.txt
+%dir %{python_sitelib}/enchant
+%dir %{python_sitelib}/enchant/checker
+%dir %{python_sitelib}/enchant/tokenize
+%{python_sitelib}/enchant/*.py[oc]
+%{python_sitelib}/enchant/checker/*.py[oc]
+%{python_sitelib}/enchant/tokenize/*.py[oc]
