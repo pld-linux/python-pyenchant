@@ -1,0 +1,14 @@
+diff -burNp pyenchant-1.5.1/setup.py pyenchant-1.5.1-dud/setup.py
+--- pyenchant-1.5.1/setup.py	2009-01-08 01:09:54.000000000 +0100
++++ pyenchant-1.5.1-dud/setup.py	2009-02-24 10:15:40.059815393 +0100
+@@ -5,8 +5,8 @@
+ #  This script is placed in the public domain.
+ #
+ 
+-import ez_setup
+-ez_setup.use_setuptools()
++#import ez_setup
++#ez_setup.use_setuptools()
+ 
+ from setuptools import setup, find_packages, Extension
+ 
