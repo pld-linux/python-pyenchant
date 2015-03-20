@@ -3,7 +3,7 @@ Summary:	Spellchecking library for Python
 Summary(pl.UTF-8):	Biblioteka Pythona sprawdzająca pisownię
 Name:		python-%{pname}
 Version:	1.5.3
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
