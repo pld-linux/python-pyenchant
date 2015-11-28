@@ -32,13 +32,12 @@ moduł Pythona.
 %patch0 -p1
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--optimize=2 \
+%py_install \
 	--root $RPM_BUILD_ROOT \
 	--single-version-externally-managed
 
