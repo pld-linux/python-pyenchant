@@ -10,6 +10,7 @@ Source0:	http://downloads.sourceforge.net/pyenchant/%{pname}-%{version}.tar.gz
 # Source0-md5:	d327fb9c8620ecc261a424083dc9aa95
 Patch0:		%{name}-ez_setup.patch
 URL:		http://pyenchant.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	enchant-devel >= 1.3.0
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools >= 0.6-0.c3
