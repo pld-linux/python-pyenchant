@@ -8,7 +8,7 @@ Summary:	Spellchecking library for Python 2
 Summary(pl.UTF-8):	Biblioteka Pythona 2 sprawdzająca pisownię
 Name:		python-pyenchant
 Version:	2.0.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyenchant/
