@@ -2,11 +2,12 @@
 # Conditional build:
 %bcond_with	tests	# unit tests (require en_US dictionary)
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-pyenchant.spec)
 
 Summary:	Spellchecking library for Python 2
 Summary(pl.UTF-8):	Biblioteka Pythona 2 sprawdzająca pisownię
 Name:		python-pyenchant
+# keep 2.x here for python2 support
 Version:	2.0.0
 Release:	5
 License:	LGPL v2.1+
