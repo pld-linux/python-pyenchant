@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Biblioteka Pythona 2 sprawdzająca pisownię
 Name:		python-pyenchant
 # keep 2.x here for python2 support
 Version:	2.0.0
-Release:	5
+Release:	6
 License:	LGPL v2.1+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyenchant/
